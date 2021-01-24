@@ -4,4 +4,4 @@ Fitur:
 - Multi user.
 - Data master
 - Cetak Nota
-- Beta
+- Beta ver
