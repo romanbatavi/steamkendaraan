@@ -19,9 +19,7 @@ if( empty( $_SESSION['id_user'] ) ){
 
 		 <div class="col-sm-1">
 		  <a href="?hlm=laporan" id="tombol" class="btn btn-info pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Kembali</a><br/><br/><br/>
-
 		   <button id="tombol" onclick="window.print()" class="btn btn-warning"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Cetak</button>
-
 		   </div>
 
 		  <div class="col-sm-11">

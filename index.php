@@ -1,8 +1,6 @@
 <?php
-
     //memulai session
     session_start();
-
     //jika ada session, maka akan diarahkan ke halaman dashboard admin
     if(isset($_SESSION['id_user'])){
 
@@ -10,10 +8,8 @@
         header("Location: ./admin.php");
         die();
     }
-
     //mengincludekan koneksi database
     include "koneksi.php";
-
 ?>
 
 <!DOCTYPE html>
@@ -125,10 +121,10 @@
 		?>
 		<h2><span class="glyphicon glyphicon-book"></span></h2>
         <h2 class="form-signin-heading"><b>KASIR</b> CUCI STEAM</h2><hr>
-        <input type="text" name="username" class="form-control" placeholder="Nama pengguna" required autofocus><br>
-        <input type="password" name="password" class="form-control" placeholder="Kata sandi" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit" name="login">MASUK</button><hr>
-		<label for="">&copy; Kasir Cuci Steam</label>
+        <input type="text" name="username" class="form-control" placeholder="Nama Pengguna" required autofocus><br>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="login"><b><u>MASUK<u></b></button><hr>
+		<label for="">&copy; RB  Kasir Cuci Steam</label>
       </form>
 	</div>
 	</div>

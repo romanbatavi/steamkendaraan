@@ -23,7 +23,12 @@
     list($no_nota, $nama, $jenis, $bayar, $kembali, $total, $tanggal, $id_user) = mysqli_fetch_array($sql);
 
     echo '
-        <center><h3>Kasir Cuci team</h3></center>
+        <center><h1>Steam Anugrah Permata</h1></center>
+        <center><h5>Telepon : 085536884201</h5></center>
+        <center><h5>Kp.Rawabadung Rt.04/13 No.53 Cakung Jakarta Timur 13930</h5></center>
+        <center><h5>-----------------------------------------------------------------</h5></center>
+        <center><h1>Laporan Transaksi</h1></center>
+
         <hr/>
         <h4>No : <b>'.$no_nota.'</b></h4>
         <table class="table table-bordered">
