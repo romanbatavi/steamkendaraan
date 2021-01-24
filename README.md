@@ -1,7 +1,8 @@
 Aplikasi sederhana jasa cuci kendaraan dengan PHP MySQLi.
 ---
 Fitur:
-- Multi user.
-- Data master
+- 2 Users.
+- Data Master
 - Cetak Nota
-- Beta ver
+- Laporan
+- Beta Ver.
