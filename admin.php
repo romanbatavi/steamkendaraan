@@ -2,7 +2,7 @@
 session_start();
 if( empty( $_SESSION['id_user'] ) ){
 	//session_destroy();
-	$_SESSION['err'] = '<strong>ERROR!</strong> Anda harus login terlebih dahulu.';
+	$_SESSION['err'] = '<strong>ERROR!</strong> MOHON UNTUK MELAKUKAN LOGIN';
 	header('Location: ./');
 	die();
 } else {
