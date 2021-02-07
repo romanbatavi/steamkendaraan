@@ -77,7 +77,7 @@ if( empty( $_SESSION['id_user'] ) ){
 	?>
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h2><marquee style="color:white;" bgcolor="#4169E1"><b>Selamat Datang Di Aplikasi Kasir Steam Anugrah Permata</b></marquee></h2>
+        <h2><marquee style="color:white;" bgcolor="#317eac"><b>Selamat Datang Di Aplikasi Kasir Steam Anugrah Permata</b></marquee></h2>
 		
         <p>Halo <strong><?php echo $_SESSION['nama']; ?></strong>, Anda login sebagai
 			<strong>
