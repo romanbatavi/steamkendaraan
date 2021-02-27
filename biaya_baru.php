@@ -21,7 +21,7 @@ if( empty( $_SESSION['id_user'] ) ){
 		}
 	} else {
 ?>
-<h2>Tambah Data Master biaya Baru</h2>
+<h2>Tambah Data Master Biaya</h2>
 <hr>
 <form method="post" action="" class="form-horizontal" role="form">
 	<div class="form-group">

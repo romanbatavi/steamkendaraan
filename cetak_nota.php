@@ -1,7 +1,7 @@
 <?php
     if( empty( $_SESSION['id_user'] ) ){
 
-    	$_SESSION['err'] = '<strong>ERROR!</strong> Anda harus login terlebih dahulu.';
+    	$_SESSION['err'] = '<strong>ERROR!</strong> Anda Harus Login Terlebih Dahulu.';
     	header('Location: ./');
     	die();
     } else {
