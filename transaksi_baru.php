@@ -1,7 +1,7 @@
 <?php
 if( empty( $_SESSION['id_user'] ) ){
 
-	$_SESSION['err'] = '<strong>ERROR!</strong> Anda harus login terlebih dahulu.';
+	$_SESSION['err'] = '<strong>ERROR!</strong> Anda Harus Login Terlebih Dahulu.';
 	header('Location: ./');
 	die();
 } else {
@@ -54,7 +54,6 @@ if( empty( $_SESSION['id_user'] ) ){
 				echo '"name="no_nota" placeholder="No. Nota" readonly>';
 
 		?>
-
 		</div>
 	</div>
 	<div class="form-group">
@@ -68,7 +67,6 @@ if( empty( $_SESSION['id_user'] ) ){
 				while($data = mysqli_fetch_array($q)){
 					echo '<option value="'.$data['biaya'].'">'.$data['jenis'].'</option>';
 				}
-
 			?>
 			</select>
 		</div>
@@ -76,13 +74,13 @@ if( empty( $_SESSION['id_user'] ) ){
 	<div class="form-group">
 		<label for="biaya" class="col-sm-2 control-label">Biaya</label>
 		<div class="col-sm-3">
-			<input type="number" class="form-control" id="biaya" name="biaya" value="" required readonly>
+			<input type="number" class="form-control" id="biaya" name="biaya" placeholder="Biaya" value="" required readonly>
 		</div>
 	</div>
 	<div class="form-group">
 		<label for="bayar" class="col-sm-2 control-label">Bayar</label>
 		<div class="col-sm-3">
-			<input type="number" class="form-control" id="bayar" name="bayar" placeholder="Isi dengan angka" required>
+			<input type="number" class="form-control" id="bayar" name="bayar" placeholder="Bayar" required>
 		</div>
 	</div>
 	<div class="form-group">
@@ -129,6 +127,5 @@ if( empty( $_SESSION['id_user'] ) ){
         $("#kembali").val(bayar - biaya);
         $("#total").val(biaya);
     });
-
   });
 </script>

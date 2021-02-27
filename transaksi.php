@@ -2,7 +2,7 @@
 
 if( empty( $_SESSION['id_user'] ) ){
 
-	$_SESSION['err'] = '<strong>ERROR!</strong> Anda harus login terlebih dahulu.';
+	$_SESSION['err'] = '<strong>ERROR!</strong> Anda Harus Login Terlebih Dahulu.';
 	header('Location: ./');
 	die();
 } else {
@@ -25,7 +25,6 @@ if( empty( $_SESSION['id_user'] ) ){
 	} else {
 
 		echo '
-
 			<div class="container">
 				<h3 style="margin-bottom: -20px;">Daftar Transaksi</h3>
 					<a href="./admin.php?hlm=transaksi&aksi=baru" class="btn btn-success btn-s pull-right">Tambah Data</a>
@@ -72,15 +71,12 @@ if( empty( $_SESSION['id_user'] ) ){
 					</script>
 
 					<a href="?hlm=cetak&id_transaksi='.$row['id_transaksi'].'" class="btn btn-info btn-s" target="_blank">Cetak Nota</a>
-
-					 <a href="?hlm=transaksi&aksi=edit&id_transaksi='.$row['id_transaksi'].'" class="btn btn-warning btn-s">Edit</a>
-
-					 <a href="?hlm=transaksi&aksi=hapus&submit=yes&id_transaksi='.$row['id_transaksi'].'" onclick="return konfirmasi()" class="btn btn-danger btn-s">Hapus</a>
-
-					 </td>';
+					<a href="?hlm=transaksi&aksi=edit&id_transaksi='.$row['id_transaksi'].'" class="btn btn-warning btn-s">Edit</a>
+					<a href="?hlm=transaksi&aksi=hapus&submit=yes&id_transaksi='.$row['id_transaksi'].'" onclick="return konfirmasi()" class="btn btn-danger btn-s">Hapus</a>
+					</td>';
 				}
 			} else {
-				 echo '<td colspan="8"><center><p class="add">Tidak ada data untuk ditampilkan. <u><a href="?hlm=transaksi&aksi=baru">Tambah data baru</a></u> </p></center></td></tr>';
+				 echo '<td colspan="8"><center><p class="add">Tidak Ada Data. <u><a href="?hlm=transaksi&aksi=baru">Tambah data baru</a></u> </p></center></td></tr>';
 			}
 			echo '
 			 	</tbody>

@@ -2,7 +2,7 @@
 
 if( empty( $_SESSION['id_user'] ) ){
 
-	$_SESSION['err'] = '<strong>ERROR!</strong> Anda harus login terlebih dahulu.';
+	$_SESSION['err'] = '<strong>ERROR!</strong> Anda Harus Login Terlebih Dahulu.';
 	header('Location: ./');
 	die();
 } else {
@@ -67,7 +67,7 @@ if( empty( $_SESSION['id_user'] ) ){
 
 					<script type="text/javascript" language="JavaScript">
 					  	function konfirmasi(){
-						  	tanya = confirm("Anda yakin akan menghapus user ini?");
+						  	tanya = confirm("Hapus User Ini?");
 						  	if (tanya == true) return true;
 						  	else return false;
 						}

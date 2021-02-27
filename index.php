@@ -32,7 +32,7 @@
 	  background-image: url(img/cuci.jpg);
 	  background-size: cover;
 	}
-
+petugas
 	.form-signin {
 	  max-width: 330px;
 	  padding: 15px;
@@ -68,11 +68,9 @@
 	  border-top-right-radius: 0;
 	}
 	</style>
-
   </head>
 
   <body>
-
     <div class="container">
 	<?php
 
@@ -100,7 +98,7 @@
 			die();
 		} else {
 
-			$_SESSION['err'] = '<strong>ERROR!</strong> Username dan Password tidak ditemukan.';
+			$_SESSION['err'] = '<strong>ERROR!</strong> Username & Password Tidak Ditemukan.';
 			header('Location: ./');
 			die();
 		}

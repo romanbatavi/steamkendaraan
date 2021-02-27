@@ -1,4 +1,4 @@
-Aplikasi sederhana jasa cuci kendaraan dengan PHP MySQLi.
+Aplikasi Sederhana Steam Kendaraan PHP MySQLi.
 ---
 Fitur:
 - 2 Users.

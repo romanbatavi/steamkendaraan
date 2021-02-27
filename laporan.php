@@ -1,6 +1,6 @@
 <?php
 if( empty( $_SESSION['id_user'] ) ){
-	$_SESSION['err'] = '<strong>ERROR!</strong> Anda harus login terlebih dahulu.';
+	$_SESSION['err'] = '<strong>ERROR!</strong> Anda Harus Login Terlebih Dahulu.';
 	header('Location: ./');
 	die();
 } else {
@@ -15,7 +15,7 @@ if( empty( $_SESSION['id_user'] ) ){
 		 if(mysqli_num_rows($sql) > 0){
 			 $no = 0;
 
-		 echo '<h2>Rekap Laporan Penghasilan <small>'.$tgl1.' sampai '.$tgl2.'</small></h2><hr>
+		 echo '<h2>Rekap Laporan Penghasilan <small>'.$tgl1.' Sampai '.$tgl2.'</small></h2><hr>
 
 		 <div class="col-sm-1">
 		  <a href="?hlm=laporan" id="tombol" class="btn btn-info pull-left"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Kembali</a><br/><br/><br/>
